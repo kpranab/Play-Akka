@@ -16,7 +16,7 @@ public class AkkaMain {
 		
 		akkaBoot.tell(new AkkaBootActor.Stop(), ActorRef.noSender());
 		
-		akkaBoot.tell(new AkkaBootActor.Move(AkkaBootActor.Direction.FORWARD), getSelf());
+//		akkaBoot.tell(new AkkaBootActor.Move(AkkaBootActor.Direction.FORWARD), getSelf());
 		
 		system.terminate();
 	}
