@@ -30,14 +30,6 @@ public class HomeController extends Controller {
         return ok("Hello Play");
     }
 
-    public Result explore() {
-        return ok(views.html.explore.render());
-    }
-
-    public Result tutorial() {
-        return ok(views.html.tutorial.render());
-    }
-
     public Result welcome(String name){
         return ok("Welcome "+name);
     }
