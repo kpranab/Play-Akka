@@ -18,7 +18,7 @@ public class CalculatorActor extends AbstractActor {
                     System.out.println("Calculating " + add.getN1() + " + " + add.getN2());
                     Operation.AddResult result = new Operation.AddResult(add.getN1(), add.getN2(),
                             add.getN1() + add.getN2());
-                    System.out.println("Add result :"+result.getResult());
+                    System.out.println("Add result : "+result.getResult());
                     sender().tell(result, self());
                 })
                 .match(Operation.Subtract.class, subtract -> {
@@ -26,6 +26,7 @@ public class CalculatorActor extends AbstractActor {
                             + subtract.getN2());
                     Operation.SubtractResult result = new Operation.SubtractResult(subtract.getN1(),
                             subtract.getN2(), subtract.getN1() - subtract.getN2());
+                    System.out.println("Sub result : "+result.getResult());
                     sender().tell(result, self());
                 })
                 .match(Operation.Multiply.class, multiply -> {
