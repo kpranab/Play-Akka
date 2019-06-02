@@ -1,7 +1,7 @@
 # Play-Akka
 <h3>Contains Akka toolkit for Creating Acotor,ActorStsrem,ActorRef and Props,
 Akka cluser with remoting,
-  Play and akka integration</h3>
+  Play and akka remote integration.</h3>
 
 <h4>Run Akka remote app<h4>
       <ul>
